@@ -24,27 +24,27 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common PixelOS stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_SUPPORTS_CALL_RECORDING := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := x1s
-PRODUCT_NAME := aosp_x1s
+PRODUCT_DEVICE := c1s
+PRODUCT_NAME := aosp_c1s
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-G981B
+PRODUCT_MODEL := SM-N981B
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 # Use the latest approved GMS identifiers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=x1sxxx \
-    PRIVATE_BUILD_DESC="x1sxxx-user 11 RP1A.200720.012 G981BXXSADUH5 release-keys"
+    PRODUCT_NAME=c1sxxx \
+    PRIVATE_BUILD_DESC="c1sxxx-user 11 RP1A.200720.012 N981BXXSHHYG1 release-keys"
 
-BUILD_FINGERPRINT := samsung/x1sxxx/x1s:11/RP1A.200720.012/G981BXXSADUH5:user/release-keys
+BUILD_FINGERPRINT := samsung/c1sxxx/c1s:11/RP1A.200720.012/N981BXXSHHYG1:user/release-keys
 
 # Define PDA property for camera
 PRODUCT_SYSTEM_PROPERTIES += \
-    ro.build.PDA=G981BXXSADUH5
+    ro.build.PDA=N981BXXSHHYG1
