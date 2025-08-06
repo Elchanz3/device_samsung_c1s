@@ -16,7 +16,7 @@
 # inherit from common
 include device/samsung/universal9830-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/samsung/x1s
+DEVICE_PATH := device/samsung/c1s
 
 # Audio
 BOARD_USE_BTA2DP_OFFLOAD := true
@@ -39,10 +39,10 @@ SOONG_CONFIG_samsungCameraVars_extra_ids := 52
 TARGET_SCREEN_DENSITY := 480
 
 # Kernel
-TARGET_KERNEL_CONFIG := exynos9830-x1sxxx_defconfig
+TARGET_KERNEL_CONFIG := exynos9830-c1sxxx_defconfig
 
 # OTA
-TARGET_OTA_ASSERT_DEVICE := x1s
+TARGET_OTA_ASSERT_DEVICE := c1s
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
@@ -63,4 +63,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION                        := VER_0_8_X
 
 # inherit from the proprietary version
--include vendor/samsung/x1s/BoardConfigVendor.mk
+-include vendor/samsung/c1s/BoardConfigVendor.mk

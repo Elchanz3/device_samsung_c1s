@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/samsung/x1s
+DEVICE_PATH := device/samsung/c1s
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -27,8 +27,8 @@ PRODUCT_PACKAGES += \
     libbt-vendor:64
 
 # Boot Animation
-TARGET_SCREEN_HEIGHT := 3200
-TARGET_SCREEN_WIDTH := 1440
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -64,4 +64,4 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, device/samsung/universal9830-common/device-common.mk)
 
 # Inherit from the proprietary version
-$(call inherit-product-if-exists, vendor/samsung/x1s/x1s-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/c1s/c1s-vendor.mk)

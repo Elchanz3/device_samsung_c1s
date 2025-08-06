@@ -8,7 +8,7 @@
 
 set -e
 
-export DEVICE=x1s
+export DEVICE=c1s
 export DEVICE_COMMON=universal9830-common
 export VENDOR=samsung
 
